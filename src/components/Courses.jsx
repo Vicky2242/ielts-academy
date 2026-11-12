@@ -50,13 +50,13 @@ function Courses() {
           {courses.map((course, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition"
+              className="group bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
             >
-              <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center text-2xl mb-6">
-                ✓
-              </div>
+             <div className="w-14 h-14 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-orange-500 group-hover:text-white transition-colors duration-300">
+             ✓
+            </div>
 
-              <h3 className="text-xl font-bold text-blue-950 mb-3">
+              <h3 className="text-xl font-bold text-blue-950 mb-3 group-hover:text-orange-600 transition-colors">
                 {course.title}
               </h3>
 
@@ -76,7 +76,7 @@ function Courses() {
 
               <a
                 href="#contact"
-                className="text-orange-600 font-semibold hover:text-orange-700"
+                className="inline-flex items-center gap-2 text-orange-600 font-semibold hover:gap-4 transition-all duration-300"
               >
                 Enquire Now →
               </a>

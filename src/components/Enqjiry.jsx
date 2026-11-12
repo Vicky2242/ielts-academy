@@ -61,7 +61,7 @@ Message: ${formData.message}
 
         <form
           onSubmit={handleSubmit}
-          className="bg-white p-8 md:p-10 rounded-2xl shadow-lg space-y-6"
+          className="bg-white p-6 md:p-10 rounded-2xl border border-gray-100 shadow-xl space-y-6"
         >
 
           <div>
@@ -76,7 +76,7 @@ Message: ${formData.message}
               onChange={handleChange}
               placeholder="Enter your full name"
               required
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 bg-white text-gray-800 outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-100 transition"
             />
           </div>
 
@@ -138,10 +138,14 @@ Message: ${formData.message}
 
           <button
             type="submit"
-            className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-lg transition"
+           className="w-full bg-orange-500 hover:bg-orange-600 active:scale-[0.98] text-white font-semibold py-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
           >
             Submit Enquiry
           </button>
+
+          <p className="text-center text-sm text-gray-500">
+            Your details will only be used to respond to your enquiry.
+          </p>
 
         </form>
       </div>
